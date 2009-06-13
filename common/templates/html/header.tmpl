@@ -1,0 +1,112 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+<!-- HEADER -->
+  <head>
+    <title>{TITLE}</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+    <link rel="stylesheet" href={CSS1} media="screen" type="text/css" />
+    <link rel="stylesheet" href={CSS2} media="screen" type="text/css" />
+    <script src={JS1} type="text/javascript"></script>
+    <script src={JS2} type="text/javascript"></script>
+    <style type="text/css">
+      #menu li #{MENU_ACTIVE}
+      {
+        color: #FF7800;/*#FFFFFF;*/
+        font-weight: bolder;
+        background-position: 0 -64px;
+        text-align: left;
+        padding: 8px 0 0 40px;
+      }
+      #navi #{NAVI_ACTIVE} span
+      {
+      	color:#008000;
+      	background-position: 0 -26px;
+      }
+    </style>
+    <!--[if IE]>
+      <style type="text/css" media="screen">
+        #warn_js
+        {
+          left: 0px;
+        }
+        #search_top form div span input, #login_front form div span input
+        {
+        	padding-left: 3px;
+        	padding-right:  3px;
+        }
+        h2
+        {
+          margin-top: 15px;
+          font-size: 20px;
+        }
+        #login_front form
+        {
+          padding: 4px 0 4px 0;
+        }
+        #ads_right
+        {
+          margin-left: 0px;
+          padding-left: 602px;
+          z-index: -1;
+        }
+      </style>
+    <![endif] -->
+  </head>
+  <body>
+    <noscript>
+      <div id="warn_js">
+        <p>Bei deinem Browser ist Javascript deaktiviert. M&ouml;glicherweise ist die Funktionalit&auml;t der Seite deshalb eingeschr&auml;nkt.</p>
+      </div>
+    </noscript>
+
+    <!-- ADVERTISER LEFT -->
+{ADVERTISER_LEFT}
+    <!-- END ADVERTISER LEFT -->
+
+    <!-- ADVERTISER TOP -->
+{ADVERTISER_TOP}
+    <!-- END ADVERTISER TOP -->
+
+    <!-- MAIN CONTAINER -->
+    <div id="main">
+      
+      <!-- PAGE HEAD -->
+      <div id="head">
+        
+        
+        <!-- ADVERTISER RIGHT -->
+{ADVERTISER_RIGHT}
+        <!-- END ADVERTISER RIGHT -->
+
+        
+        <!-- LOGO -->
+        <span>
+          <a href={_LOGO} title="Sch&uuml;lerportal - Index"><img src={LOGO} alt="Sch&uuml;lerportal Logo" /></a>
+        </span>
+        <!-- END LOGO -->
+        
+        <!-- CAPTION -->
+        <h1>{CAPTION_H1}</h1>
+        <!-- END CAPTION -->
+
+        <!-- SEEK -->
+        <div id="search_top">
+{SEEK}
+        </div>
+        <!-- END SEEK -->
+      
+      </div>
+      <!-- END PAGE HEAD -->
+
+      <!-- MENU -->
+      <div id="navi">
+{MENU}
+      </div>
+      <!-- MENU -->
+
+      <!-- BREADCRUMB -->
+      <div id="breadcrumb">{BREADCRUMB}</div>
+      <!-- BREADCRUMB -->
+
+<!-- END HEADER -->
+

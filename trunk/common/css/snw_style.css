@@ -1,0 +1,801 @@
+/*
+ *  Copyright (c) 2008, Kay Haefker. All rights reserved.
+ *
+ *  This program is free software: you can redistribute it and/or modify
+ *  it under the terms of the GNU General Public License as published by
+ *  the Free Software Foundation, either version 3 of the License, or
+ *  (at your option) any later version.
+ *
+ *  This program is distributed in the hope that it will be useful,
+ *  but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *  GNU General Public License for more details.
+ *
+ *  You should have received a copy of the GNU General Public License
+ *  along with this program.  If not, see <http://www.gnu.org/licenses/>. 
+ */
+
+/*
+ * *
+ * * *    C O M M O N    S T Y L E    S H E E T    * * *
+ * *
+ *
+ */
+body
+{
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	background: #FFFFFF url(../img/bg/body.gif) repeat;
+	margin: 25px 0 25px 0;
+	padding: 0;
+	text-align: center;
+	width: 100%;
+	z-index: 1100;
+}
+
+br 
+{ 
+  height: 1px; 
+}
+img
+{
+  border: none;
+}
+textarea
+{
+	background: #F0FFF0;
+	color: #696969;
+	font: 9px verdana, geneva, lucida, arial, helvetica, sans-serif;
+	border: 1px solid #D8D5C3;
+	overflow: auto;
+}
+legend
+{
+	color: #FF7800;
+	font-weight: bold;
+}
+input
+{
+	background: #F0FFF0;
+	color: #696969;
+	font: 9px verdana, geneva, lucida, arial, helvetica, sans-serif;
+	border: 1px solid #D8D5C3;
+}
+label
+{
+  color: #006400;
+  font-weight: bold;
+}
+select
+{
+	background: #F0FFF0;
+	color: #696969;
+	border: 1px solid #D8D5C3;
+	font: 9px verdana, geneva, lucida, arial, helvetica, sans-serif;
+}
+option, optgroup
+{
+	background: #F0FFF0;
+	color: #696969;
+	font-size: 9px;
+	font-family: verdana, geneva, lucida, arial, helvetica, sans-serif;
+}
+fieldset
+{
+	border: 1px dotted #006400;
+}
+p
+{
+	text-align: justify;
+}
+#main
+{
+  width: 800px;
+  padding: 0px;
+  background: #FFFFFF;
+  border: 1px solid #FF7800;
+  margin: auto auto auto auto;
+  text-align: left;
+}
+#head
+{
+  height: 60px;
+  background: #F0FFF0 url(../img/bg/hr_bar_orange2.png) repeat-y; 
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+#head img
+{
+	float: left;
+	border: none;
+	margin: 0;
+	padding: 0;
+}
+#head h1
+{
+  display: none;
+  visibility: hidden; 
+}
+#warn_js
+{
+	position: fixed;
+	width: 100%;
+	top: 3px;
+	color: red;
+	background-color: #F0FFF0;
+	border: 3px red;
+	border-style: double none double none;
+	z-index: 2001;
+}
+#warn_js p
+{
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	font: 11px verdana, sans-serif;
+	font-weight: bold;	
+}
+#search_top
+{
+	float: right;
+	padding: 0px;
+	margin: 0;
+}
+#search_top form div
+{
+	padding: 0;
+	margin: 20px 20px -20px 0px;
+}
+#search_top form div span input
+{
+	background: #006400;
+	color: #FFFFFF;
+	font: 10px verdana, geneva, lucida, arial, helvetica, sans-serif;
+	font-weight: 500;
+}
+
+#login_front
+{
+  width: 100%;
+  padding-top: 10px;
+  background: #FF7800 url(../img/bg/body4.gif) repeat;
+  text-align: center;
+  font-family: verdana;
+  font-size: 10px;
+  border-bottom: 5px solid #FF7800;
+}
+#login_front form
+{
+  background-color: #FFFFFF;
+  border: 5px #FF7800;
+  border-style: solid solid none solid;
+  text-align: center;
+  margin: 0px 10% 0px 10%;
+  padding: 5px 0 5px 0;
+}
+#login_front form div span input 
+{
+	background: #006400;
+	color: #FFFFFF;
+	margin: 0px;
+	font-weight: bold;
+}
+
+#logout
+{
+  width: 100%;
+  padding-top: 10px;
+  background: #FF7800 url(../img/bg/body4.gif) repeat;
+  text-align: center;
+  border-bottom: 5px solid #FF7800;
+}
+#logout div
+{
+  background-color: #FFFFFF;
+  border: 5px #FF7800;
+  border-style: solid solid none solid;
+  margin: 0px 10% 0px 10%;
+  padding: 7px 0 7px 0;
+  text-align: center;
+}
+#logout p
+{
+	color: #006400;
+	margin: 0px;
+	padding: 0px;
+  text-align: center;
+  font-family: verdana;
+  font-size: 10px;
+	font-weight: bold;
+}
+#logout span
+{
+	color: #006400;
+	margin: 0px;
+	padding: 0px;
+  text-align: center;
+  font-family: verdana;
+  font-size: 10px;
+	font-weight: bold;
+	font-style: oblique;
+	letter-spacing: 1px;
+}
+
+#logout a
+{
+	color: #006400;
+	margin: 0px;
+	padding: 0px;
+  text-align: center;
+  text-decoration: underline;
+  font-family: verdana;
+  font-size: 10px;
+	font-weight: bold;
+	letter-spacing: 1px;
+}
+
+#logout a:hover
+{
+	color: #FF7800;
+	margin: 0px;
+	padding: 0px;
+  text-align: center;
+  text-decoration: underline;
+  font-family: verdana;
+  font-size: 10px;
+	font-weight: bold;
+	letter-spacing: 1px;
+}
+
+#breadcrumb
+{ 
+  display: block;
+  height: 15px;
+  background: #F0FFF0 url(../img/bg/hr_bar_green1.png) repeat-y;
+  color: #FF7800;
+  text-align: left;
+  padding: 3px 0 3px 25px;
+  font-size: 12px;
+  font-family: tahoma, sans-serif;
+  border-bottom: 1px solid #666666;
+}
+#breadcrumb span
+{
+	margin: 0px 0px 0px 10px;
+	color: Green;
+	letter-spacing: normal;
+	font-family: tahoma, sans-serif;
+	font-size: 12px;
+}
+#breadcrumb span a
+{
+	margin: 0px;
+	padding: 0px;
+	color: Green;
+	font-family: tahoma, sans-serif;
+	font-size: 12px;
+}
+#breadcrumb a:link, #breadcrumb a:visited
+{
+	margin: 0px;
+	padding: 0px;
+	color: Green;
+	font-family: tahoma, sans-serif;
+	font-size: 12px;
+}
+#warn_info
+{
+	position: relative;
+	width: 100%;
+	top: 1px;
+	margin-bottom: 2px;
+	color: #006400;
+	background-color: #F0FFF0;
+	border: 3px #006400;
+	border-style: double none double none;
+}
+#warn_info a, #warn_info a:visited
+{
+	color: #006400;
+	text-decoration: none;
+	letter-spacing: 1px;
+	padding: 0 2px 0 2px;
+}
+#warn_info a:hover
+{
+	color: #FF7800;
+}
+#warn_info p
+{
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	font: 11px verdana, sans-serif;
+	font-weight: bold;	
+}
+#warn_error
+{
+	position: relative;
+	width: 100%;
+	top: 1px;
+	margin-bottom: 2px;
+	color: red;
+	background-color: #F0FFF0;
+	border: 3px red;
+	border-style: double none double none;
+}
+#warn_error p
+{
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	font: 11px verdana, sans-serif;
+	font-weight: bold;	
+}
+#vote_teaser
+{
+	width: 100%;
+	margin: auto;
+	text-align: center;
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size: smaller; 
+}
+#vote_teaser div 
+{
+	background: #F0FFF0;
+	text-align: left;
+	margin: 25px auto 25px auto;
+  border: 1px dotted #FF7800;
+	width: 500px;
+}
+#vote_teaser h2
+{	
+	margin-left: 25px;
+}
+#vote_teaser ul
+{
+
+}
+#vote_teaser li
+{
+	color: #006400;
+	list-style: circle;
+}
+#vote_teaser a
+{
+	color: #006400;
+	text-decoration: none;
+}
+
+#vote_teaser a:hover
+{
+	color: #FF7800;
+	text-decoration: none;
+}
+
+#footer 
+{
+  bottom: 0px;
+  height: 30px;
+  color: #8F8F8F;
+  font-size: 10px;
+  font-family: tahoma;
+  margin: 0 0 0 0px;
+  padding: 1px;
+  border-top: 1px dotted #FF7800;
+}
+#footer p
+{
+  text-align: center;
+  margin-top: 8px;
+}
+#footer a 
+{
+  color: #FF7800;
+  font-size: 10px;
+  font-family: tahoma, sans-serif;
+}
+
+#ads_left /* TODO: advertisement position left*/
+{ 
+	visibility: hidden;
+	background: transparent;
+}
+#ads_top, #ads_bottom
+{
+	visibility: visible;
+	display: block;
+	height: 90px;
+	width: 800px;
+	min-width: 730px;
+	max-width: 800px;
+	background: transparent;
+	margin: 1px auto 1px auto;
+	padding: 0px;
+	border: none;
+}
+#ads_right
+{
+	position: absolute;
+	display: block;
+	visibility: visible;
+	background: transparent;
+	height: 600px;
+	width: 160px;
+	margin: -1px 0px 0 802px;
+	padding: 0 0px 0 0px;
+	border: none;
+   z-index: 1000;
+}
+#registration
+{
+	
+	width: 100%;
+	margin: auto;
+	text-align: center;
+}
+#reg
+{	
+	background: #F0FFF0;
+	color: #006400;
+	width: 500px;
+	text-align: center;
+	margin: 25px auto 25px auto;
+	padding: 0px 0px 0px 0px;
+	border: 1px dotted #FF7800;
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size: smaller; 
+}
+#registration h2
+{
+	text-align: left;
+	margin-left: 25px; 
+}
+#registration p
+{
+	margin: 5px 35px 0 35px;
+}
+#registration input, #registration span, #registration textarea, #registration select
+{
+	margin: 5px 0 0 0;
+}
+#registration fieldset
+{
+  background-color: #FFFFFF;/*#FFEBCD;*/
+  margin: 0px 35px 10px 35px;
+  padding: 0 0 15px 20px;
+  text-align: left;
+	font-size: smaller; 
+}
+#registration legend
+{
+  background-color: #F0FFF0;
+  margin: 0px 0px 0px -10px;
+  padding: 0px 2px 0px 2px;
+  border: 1px dotted #006400;
+  font-size: larger;
+}
+#reg_buttons 
+{
+	margin: 15px 40px 35px 0;
+	text-align: right;
+}
+#reg_buttons input
+{
+	background-color: #006400;
+	color: #FFFFFF;
+	font-weight: bold; 
+}
+#registration #fl input
+{
+	white-space: nowrap;
+}
+#state, #state_school, #news_letter
+{
+	width: 238px;
+}
+#gender, #news_letter
+{
+	width: 149px;
+}
+#gender option, #news_letter option
+{
+	/* background-color: #FFC0CB; */
+}
+#mark_school, #mark_gender, #mark_news
+{
+	/* background-color: #FFC0CB; */  /* TODO: Opera */
+	text-decoration: blink;
+}
+#main_content
+{
+	clear: both;
+	z-index: 1100;
+}
+#main_content *
+{
+	clear: both; 
+	z-index: 1100;
+}
+#left_content
+{
+	clear: both; 
+	z-index: 1100;
+}
+#right_content
+{
+	clear: both;
+	z-index: 1100;
+}
+#outer
+{
+	clear: both;
+	z-index: 1100;
+	margin: 0px 0px 0px 200px;
+	padding: 25px 0 25px 0;
+	border-left: 1px dotted #FF7800;
+}
+#profil_header
+{
+	display: block;
+	margin-top: 0px;/*-136px;*/  /* TODO:  compute this with javascript*/
+	margin-left: 25px;
+	margin-right: 25px;
+	padding: 0px;
+	background: #F0FFF0 url(../img/bg/hr_bar_green2.jpg) repeat-y;
+	border: 1px solid #FF7800;
+}
+/*
+@font-face 
+{
+  font-family: Quartz;
+  font-style: normal;
+  font-weight: normal;
+  src: url(../css/fonts/QUARTZ0.eot);
+}
+@font-face 
+{
+  font-family: Quartz;
+  font-style: normal;
+  font-weight: normal;
+  src: url(../css/fonts/quartz.ttf) format("opentype");
+}
+*/
+#profil_header h3
+{
+	margin: 0px;
+	padding: 0px 0px 0px 10px;
+	color: #FF7800;
+	background: #F0FFF0 url(../img/bg/hr_bar_green2.jpg) repeat-y;
+	font-family: Impact, "Lucida Sans Unicode", "Lucida Grande","Palatino Linotype", "Book Antiqua", Palatino, monospace, "Parry Hotter", "Comic Sans MS", Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size: 19px;/* Quartz,  */
+}
+#profil_view
+{
+	display: block;
+	margin-top: 0px;
+	margin-left: 25px;
+	margin-right: 25px;
+	margin-bottom: 0px;/*margin-bottom: 25px;*/
+	padding: 0px;
+	background-color: #FFE4C4;/*#FFE4C4;#FFEBCD;*/
+	border: 1px #FF7800;
+	border-style: none solid solid solid;
+	color: #006400;
+  font-family: verdana;
+  font-size: 10px;
+	font-weight: bold;
+}
+#profil_top
+{	
+	height: 150px;
+	margin: 0;
+	padding: 0;
+	border-bottom: 1px dotted #FF7800;
+}
+#profil_top p
+{
+	margin: 0;
+	padding: 0;
+	padding-bottom: 4px;
+}
+#profil_top #online_status span
+{
+	padding-left: 46px;
+}
+#profil_top #email span
+{
+	padding-left: 52px;
+}
+
+#profil_top img
+{
+	height: 150px;
+	width: 150px;
+	/*max-width: 547px;*/
+	margin: 0;
+	padding: 0;
+	border-right: 1px dotted #FF7800;
+}
+#profile_right_top
+{
+	margin-top: -130px;
+	margin-left: 170px;
+	padding: 0;
+}
+#profile_top_btn
+{
+	/*width: px;*/
+	margin-top: 30px;
+	margin-left: 170px;
+	padding: 0;
+}
+#profil_top li
+{
+	margin: 0;
+	padding: 0;
+	padding-bottom: 4px;
+}
+#profil_top ul
+{
+	list-style: outside;
+	padding-left: 20px;
+	margin-left: 20px;
+}
+#profil_top div ul li a
+{
+	color: #006400;
+  text-decoration: underline;
+	margin: 0;
+	padding: 0;
+}
+
+#profil_top a:hover
+{
+	color: #FF7800;
+  text-decoration: underline;
+	margin: 0;
+	padding: 0;
+}
+#profil_top div p span
+{
+	color: #FF7800;
+	margin: 0;
+	padding: 0;
+	padding-left: 15px;
+}
+#profil_middle p
+{
+	margin: 0;
+	padding: 0;
+	padding-left: 25px;
+}
+#profil_middle span
+{
+	margin: 0;
+	padding: 0;
+	padding-right: 15px;
+}
+#profil_middle
+{
+	padding: 9px 0 9px 0;
+	border-bottom: 1px dotted #FF7800;
+	background: url(../img/navi/px_button_green.gif) repeat-x;
+	background-position: 0 -1px;
+}
+#profil_quick_links
+{	
+	text-align: center;
+}
+#profil_middle a
+{	
+	color: #006400;
+  text-decoration: underline;
+}
+#profil_middle a:hover
+{	
+	color: #FF7800;
+  text-decoration: underline;
+}
+#profil_bottom p
+{
+	margin: 0;
+	padding: 4px 0 0 20px;
+}
+#rating_main
+{
+	margin-left: 25px;
+	margin-top: 0px;
+	margin-right: 25px;
+	margin-bottom: 0px;
+	padding: 20px;
+	color: Green;
+	background: #FFE4C4;
+	border: 1px solid #FF7800;
+	font-size: 11px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.redirect
+{
+	text-align: center;
+	font-size: larger; 
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	
+}
+.right_top 
+{
+  text-align: right;
+  vertical-align: top;
+}
+#registration div.no_wrap
+{
+	white-space: nowrap;
+}
+#registration .reg_frm_first
+{
+	margin-top: 15px;
+}
+#state_school option.wrong_input,#gender option.wrong_input, #news_letter option.wrong_input
+{
+	background-color: #FFC0CB;
+}
+.hideme
+{
+	display: none;
+	visibility: hidden;
+}
+.content_main
+{
+  margin-left: 25px;
+  margin-top: 0px;
+  margin-right: 25px;
+  margin-bottom: 0px;
+  padding: 20px;
+  color: Green;
+  background: #FFE4C4;
+  border: 1px solid #FF7800;
+  font-size: 11px;
+}
+

@@ -1,0 +1,141 @@
+/*
+ *  Copyright (c) 2008, Kay Haefker. All rights reserved.
+ *
+ *  This program is free software: you can redistribute it and/or modify
+ *  it under the terms of the GNU General Public License as published by
+ *  the Free Software Foundation, either version 3 of the License, or
+ *  (at your option) any later version.
+ *
+ *  This program is distributed in the hope that it will be useful,
+ *  but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *  GNU General Public License for more details.
+ *
+ *  You should have received a copy of the GNU General Public License
+ *  along with this program.  If not, see <http://www.gnu.org/licenses/>. 
+ */
+
+ Schüler-Bewertungsportal
+========================
+
+portal_db:
+----------
+
+Schule                      Klassen            Fachbereich
+~~~~~~                      ~~~~~~~            ~~~~~~~~~~~
+Schul_ID(p)                 Klassen-ID(p)      UFID(p)
+schul_Name                  Schul-ID(f)        LID(f)
+Land_ID                     SID(f)             fach_Name
+plz                         LID(f)
+ort                         klassen_Name
+                            
+                            
+Schueler                    Lehrer
+~~~~~~~~                    ~~~~~~
+SID(p)                      LID(p)
+User_ID(f)                  SID(f)
+LID(f)                      Klassen_ID(f)
+Klassen_ID(f)               UFID(f)
+Adress_ID(f)                Schul_ID(f)
+Schul_ID(f)                 lehrer_Name
+nick_Name{varchar:14}
+email{varchar:255}          
+status                      Bewertungs_Msg
+geburtstag{varchar:20}      ~~~~~~~~~~~~~~
+handy_Nr{varchar:20}        BMID(p)
+icq_Nr{varchar:15}          type
+skype_Nr{varchar:20}        bewertungs_Text
+kontakt_Info{text}          status_ueberprueft
+newslettter_Status          
+                            
+                            
+                            
+Bewertung                   Poll
+~~~~~~~~~                   ~~~~
+BID(p)                      PID(p)
+SID(f)                      SID(f)
+BLID(f)                     BLID(f)
+BMID(f)                     BMID(f)
+BSID                        BSID
+datum                       datum
+kategorie                   kategorie
+b_note                      ja_nein
+Anzahl_Values               
+                            
+                            
+Schueler_Adresse            Fotos
+~~~~~~~~~~~~~~~~            ~~~~~
+Adress_ID(p)                FID(p)
+SID(f)                      SID(f)
+Land_ID                     file_Name
+plz{varchar:5}              pfad_Name
+ort{varchar:60}             foto_Titel
+strasse{varchar:80}         datum
+                            foto_breite
+                            foto_hoehe
+                            flag_aktiviert
+                            flag_ueberprueft
+                            
+                            
+Nachrichten                 Newsletter
+~~~~~~~~~~~                 ~~~~~~~~~~
+NID(p)                      news_ID(p)
+prioritaet                  news_Titel
+status                      news_inhalt
+sender_SID                  datum_erstellt
+sender_Name                 datum_gesendet
+empfaenger_SID              status
+empfaenger_Name             
+zeit_gesendet               
+zeit_empfangen              
+nachricht                   
+
+                            
+Freunde                     Konfiguration
+~~~~~~~                     ~~~~~~~~~~~~~
+Freund_ID(p)                Konfig_ID(p)
+SID(p)                      konfig_Titel
+freund_Name                 konfig_status
+                            beschreibung
+                            letzte_Aenderung
+
+                 
+Log                         Laender
+~~~                         ~~~~~~~
+SID                         Land_ID(p)
+anmelde_Datum               land_Name
+loesch_Datum                plz_Format
+
+
+--------------------------------------------------
+==================================================
+--------------------------------------------------
+
+portal_auth:
+------------
+
+SchuelerLogin
+~~~~~~~~~~~~~  
+User_ID(p)     
+user_Name      
+password
+online_Status  
+datum          
+               
+               
+AdminLogin     
+~~~~~~~~~~     
+AID(p)         
+admin_Name     
+admin_Password
+
+
+Log              
+~~~              
+Session_ID
+User_ID       
+anmelde_Zeit
+abmelde_Zeit
+IP     
+host_Name
+anmelde_Counter
